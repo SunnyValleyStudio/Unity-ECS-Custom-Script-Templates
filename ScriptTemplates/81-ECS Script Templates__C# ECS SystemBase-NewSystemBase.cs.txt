@@ -1,0 +1,19 @@
+using Unity.Entities;
+
+public partial class #SCRIPTNAME# : SystemBase
+{
+    protected override void OnCreate()
+    {
+
+    }
+
+    protected override void OnUpdate()
+    {
+
+    }
+
+    protected override void OnDestroy()
+    {
+
+    }  
+}
