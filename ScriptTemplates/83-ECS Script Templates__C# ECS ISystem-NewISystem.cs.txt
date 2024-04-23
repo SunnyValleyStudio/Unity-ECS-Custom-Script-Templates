@@ -1,6 +1,6 @@
 using Unity.Entities;
 
-public partial struct #SCRIPTNAME# : ISystem
+public partial struct #SCRIPTNAME#System : ISystem
 {
     public void OnCreate(ref SystemState state)
     {
