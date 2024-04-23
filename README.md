@@ -4,7 +4,7 @@
 
 Just add the **ScriptTemplates** folder to your **Assets** folder inside your Unity project. 
 
-![image](https://github.com/SunnyValleyStudio/Unity-ECS-Custom-Script-Templates/assets/17239042/db8a224d-aa66-4930-b13c-aeb48428a57a)
+![image](https://github.com/SunnyValleyStudio/Unity-ECS-Custom-Script-Templates/assets/17239042/8a1f463e-8112-40be-908a-370dda83b2d7)
 
 <br>
 
@@ -13,15 +13,18 @@ Just add the **ScriptTemplates** folder to your **Assets** folder inside your Un
 
 |Parameter | Description |
 |-------------|-------------|
-|"81" | Lower the number the higher the temolate will show up in the Create menu|
+|"81" | Number defining the order in the Create menu. The lower the value the higher the template will appear |
 |"ECS Script Templates__C# ECS Authoring" | Path definition. Here the template will be in "Create -> ECS Script Templates" category and it will have a name "C# ECS Authoring" |
-|"NewAuthoring.cs"| Name of the file that will be created in the Project tab in unity |
+|"NewAuthoring.cs"| Name and the extension of the file that will be created in the Project tab in unity |
 |".txt"| Tempalte needs to be saved as a Text file|
 
 <br>
 
 ## Template Definition
 ```
+using Unity.Entities;
+using UnityEngine;
+
 public class #SCRIPTNAME# : MonoBehaviour
 {
 
@@ -36,6 +39,5 @@ public class #SCRIPTNAME#Baker : Baker<#SCRIPTNAME#>
 }
 ```
 
-**#SCRIPTNAME#** - This will be swapped for the name that you gave to your script
-
+**#SCRIPTNAME#** - This will be swapped for the name that you gave to your script. We can add to it prefix or a suffix like I do with "#SCRIPTNAME#Baker"
 <p>*To use those specific Script Templates make sure that you have [Entities package](https://docs.unity3d.com/Packages/com.unity.entities@1.0/manual/index.html) installed in yopur project
