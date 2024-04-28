@@ -1,6 +1,6 @@
 using Unity.Entities;
 
-public struct  #SCRIPTNAME#Component : IComponentData
+public struct  #SCRIPTNAME# : IComponentData
 {
 
 }
